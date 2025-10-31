@@ -5,7 +5,7 @@ import { Button } from './components/ui/button'
 function App() {
   
   return (
-    <div className=''>
+    <div className='p-2'>
       hello world
       <Button className='flex gap-2'>kitio ary </Button>
     </div>
