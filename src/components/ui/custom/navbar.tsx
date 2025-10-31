@@ -17,9 +17,9 @@ const Nav:NavItem[] =[
 const navbar = () => {
   return (
     <div className=" flex justify-between">
-      <Card className="bg-foreground text-white p-2 px-3 rounded-full flex  space-x-6">
+      <Card className="bg-foreground text-white p-2 px-3 rounded-full flex  space-x-3">
        { Nav.map((n ,index)=> (
-            <div key={index} className="rounded-full  px-2">{n.name}</div>
+            <a href="#" key={index} className="rounded-full  px-2">{n.name}</a>
        ))}
       </Card>
       <div className="flex space-x-6">
