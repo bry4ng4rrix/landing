@@ -15,17 +15,17 @@ const Nav:NavItem[] =[
 
 const navbar = () => {
   return (
-    <div className="flex justify-between">
-      <Card className="bg-foreground text-white p-2 px-3 rounded-full flex  space-x-3">
+    <div className=" fixed flex w-screen z-50 p-2 items-center justify-between">
+      <Card className="bg-foreground text-white p-2 px-3 rounded-full flex shadow-md space-x-3">
        { Nav.map((n ,index)=> (
-            <a href="#" key={index} className="rounded-full  px-2">{n.name}</a>
+            <a href="#" key={index} className="rounded-full hover:text-foreground hover:bg-white px-2">{n.name}</a>
        ))}
       </Card>
       <div className="flex space-x-6">
-        <Button className="rounded-full px-6 hover:bg-orange-300">Contact</Button>
+        <Button className="rounded-full px-6 hover:bg-orange-200 hover:text-orange-500 hover:shadow-lg">Contact</Button>
             <div className="flex gap-2">
-                <Button className="rounded-full" variant='outline'><Search/></Button>
-                <Button className=" bg-foreground text-white rounded-full" variant='outline'><User/></Button>
+                <Button className="rounded-full hover:shadow-lg hover:bg-orange-200" variant='outline'><Search className="hover:scale-125"/></Button>
+                <Button className=" bg-foreground text-white rounded-full hover:shadow-lg" variant='outline'><User/></Button>
             </div>
       </div>
     </div>
