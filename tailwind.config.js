@@ -1,3 +1,5 @@
+const { Signature } = require('lucide-react');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
@@ -51,8 +53,14 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		}
+  			},
+			
+  		},
+		fontFamily:{
+			delius : ['Delius','sans-serif'],
+			signature : ['Signature', 'sans-serif'],
+		}
+
   	}
   },
   plugins: [require("tailwindcss-animate")],

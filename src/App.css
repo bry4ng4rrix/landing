@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Delius;
+  src: url('./assets/fonts/Delius.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: Signature;
+  src: url('./assets/fonts/Signature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
