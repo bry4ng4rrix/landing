@@ -16,12 +16,24 @@ const activity = () => {
     ]
 
   return (
-    <div className='bg-white grid grid-cols-5 gap-6 items-center justify-center h-52 p-2 px-6 '>
-     { Items.map((i,index) => (
-         <div key={index} className='h-24  bg-sky-400 rounded'></div>
-     ))}
+    <main className='bg-white flex flex-col gap-6 items-center justify-center h-screen p-2 px-6 '>
+
+        <div className='grid grid-cols-2 gap-5'>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+        </div>
+        <div className='grid grid-cols-3 gap-5'>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+        </div>
+        <div className='grid grid-cols-2 gap-5'>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+            <div className='bg-sky-500 h-44 w-64 rounded-2xl'></div>
+        </div>
+   
       
-    </div>
+    </main>
   )
 }
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+
 import { Card } from "../card"
 import { Button } from "../button"
 import { Home , Activity ,Clapperboard , Notebook ,Search , User } from "lucide-react"
@@ -20,7 +20,7 @@ const navbar = () => {
         
           <Card className="bg-foreground/85 backdrop-blur-lg text-white p-2 px-3 rounded-full flex shadow-md space-x-3">
        { Nav.map((n ,index)=> (
-            <a href="#" key={index} className="rounded-full hover:text-foreground font-delius hover:bg-white px-2">{n.name}</a>
+            <a href="#" key={index} className="rounded-full hover:text-foreground font-delius hover:bg-yellow-50 px-2">{n.name}</a>
        ))}
       </Card>
       <div className="flex space-x-6">
