@@ -4,6 +4,28 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const services = [
   {
+    title: 'Call Center',
+    description: 'Service client professionnel et gestion des appels pour optimiser la relation avec vos clients.',
+    image: '/logo/call.jpg',
+    features: [
+      'Service client 24/7',
+      'Gestion des appels entrants/sortants',
+      'Support multilingue',
+      'Rapports et analyses détaillés'
+    ]
+  },
+  {
+    title: 'Développement Web',
+    description: 'Création de sites web sur mesure et applications web performantes pour votre entreprise.',
+    image: '/logo/dev.jpg',
+    features: [
+      'Sites vitrines',
+      'E-commerce',
+      'Applications web sur mesure',
+      'Maintenance et support'
+    ]
+  },
+  {
     title: 'Marketing Digital',
     description: 'Stratégies de marketing numérique sur mesure pour booster votre présence en ligne et atteindre votre public cible.',
     image: '/logo/marketing.png',
@@ -76,12 +98,16 @@ const Service = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-xl sm:rounded-2xl shadow-sm sm:shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full"
             >
-              <div className="h-36 xs:h-40 sm:h-44 md:h-48 lg:h-52 overflow-hidden">
+              <div className="h-36 xs:h-40 sm:h-44 md:h-48 lg:h-52 overflow-hidden relative group">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <img 
                   src={service.image} 
                   alt={service.title}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-500 p-1"
                 />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-xs font-medium bg-orange-500/90 px-2 py-1 rounded-full">En savoir plus</span>
+                </div>
               </div>
               <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
                 <h3 className="text-lg xs:text-xl sm:text-2xl font-bold text-gray-900 mb-1.5 sm:mb-2.5">{service.title}</h3>
