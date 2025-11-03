@@ -11,7 +11,7 @@ const hero = () => {
 
 
   return (
-    <div className="w-full h-screen flex justify-between p-2">
+    <div className="w-full h-screen flex justify-between p-2 ">
       <div className="flex  flex-col items-center justify-between px-2 w-full h-full">
         <div>
           a

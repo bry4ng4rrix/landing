@@ -1,27 +1,30 @@
 
 import './App.css'
 import Navbar from './components/ui/custom/navbar'
-import Hero from './pages/hero'
 import Hero1 from './pages/hero1'
 import Activity from './pages/activity'
+import Testimonial from './pages/testimonial';
 
 
 
 function App() {
   
   return (
-    <div className='min-h-screen bg-yellow-50'>
+    <div className='min-h-screen '>
       {/* navbar */}
         <div className='flex flex-1'>
           <Navbar/>
         </div>
-        <main className='flex flex-1 space-x-2 '>
+        <main className=' space-x-2 shadow-inner-xl '>
             <Hero1/>
             
         </main>
+        <div id='activity' className='mt-5'>
         <Activity/>
-        <main className='h-screen'>
-          
+
+        </div>
+        <main className='h-screen bg-indigo-50 rounded-t-[6rem]'>
+          <Testimonial/>
         </main>
         
     </div>
