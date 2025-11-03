@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
+import styles from './hero.module.css';
 
-const Hero1 = () => {
+const Hero = () => {
   return (
     <main className='relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden px-4 py-16 md:py-24 rounded-b-[6rem] bg-gradient-to-b from-yellow-50 to-background'>
       {/* Fond décoratif */}
       <div className='absolute inset-0 overflow-hidden'>
-        <div className='absolute -top-1/2 -right-1/4 w-[800px] h-[800px] bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob'></div>
-        <div className='absolute -bottom-1/2 left-0 w-[600px] h-[600px] bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000'></div>
+        <div className={`absolute -top-1/2 -right-1/4 w-[800px] h-[800px] bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 ${styles.animateBlob}`}></div>
+        <div className={`absolute -bottom-1/2 left-0 w-[600px] h-[600px] bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 ${styles.animateBlob} ${styles.animationDelay2000}`}></div>
       </div>
 
       {/* Contenu principal */}
@@ -20,7 +21,7 @@ const Hero1 = () => {
           className='mb-8 md:mb-12 group'
         >
           <div className='relative'>
-            <div className='absolute inset-0 rounded-full bg-gradient-to-r from-orange-200 to-amber-200 blur-lg opacity-70 group-hover:opacity-100 transition-all duration-500 -z-10 animate-pulse-slow'></div>
+            <div className={`absolute inset-0 rounded-full bg-gradient-to-r from-orange-200 to-amber-200 blur-lg opacity-70 group-hover:opacity-100 transition-all duration-500 -z-10 ${styles.animatePulseSlow}`}></div>
             <img 
               src="ds/hero.jpg" 
               alt="DS Group"
@@ -87,30 +88,8 @@ const Hero1 = () => {
         </motion.div>
       </div>
 
-      {/* Animation de fond */}
-      <style jsx global>{`
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
-        .animate-blob {
-          animation: blob 15s infinite;
-        }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        @keyframes pulse-slow {
-          0%, 100% { opacity: 0.7; }
-          50% { opacity: 0.4; }
-        }
-        .animate-pulse-slow {
-          animation: pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-      `}</style>
     </main>
   );
 };
 
-export default Hero1;
+export default Hero;

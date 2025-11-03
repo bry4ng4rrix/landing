@@ -1,0 +1,29 @@
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animateBlob {
+  animation: blob 15s infinite;
+}
+
+.animationDelay2000 {
+  animation-delay: 2s;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.4; }
+}
+
+.animatePulseSlow {
+  animation: pulseSlow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (max-width: 768px) {
+  .clipPathHero {
+    clip-path: polygon(0% 5%, 0% 100%, 15% 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+}
