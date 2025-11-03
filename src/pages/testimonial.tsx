@@ -11,7 +11,7 @@ const testimonial = () => {
 
   return (
     <div className='p-24 min-h-screen'>
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-3 gap-3'>
         <Card>
             <CardHeader className='flex text-4xl font-semibold'>
                     250 +

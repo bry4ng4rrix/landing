@@ -1,7 +1,7 @@
 
 import './App.css'
 import Navbar from './components/ui/custom/navbar'
-import Hero1 from './pages/hero1'
+import Hero from './pages/hero'
 import Activity from './pages/activity'
 import Testimonial from './pages/testimonial';
 
@@ -16,7 +16,7 @@ function App() {
           <Navbar/>
         </div>
         <main className=' space-x-2 shadow-inner-xl '>
-            <Hero1/>
+            <Hero />
             
         </main>
         <div id='activity' className='mt-5'>
