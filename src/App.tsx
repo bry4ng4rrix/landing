@@ -25,7 +25,7 @@ function App() {
         <Activity/>
 
         </div>
-        <main className='bg-indigo-50 rounded-t-[6rem] '>
+        <main id='about' className='bg-gradient-to-br from-background to-sky-200  rounded-t-[6rem] '>
           <Testimonial/>
         </main>
         <main id='service' className=' bg-orange-50 rounded-t-[6rem]'>

@@ -11,9 +11,9 @@ type NavItem = {
 const navItems: NavItem[] = [
   { name: 'Accueil', link: '#' },
   { name: 'Activités', link: '#activity' },
+    { name: 'À propos', link: '#about' },
   { name: 'Services', link: '#service' },
-  { name: 'À propos', link: '#about' },
-  { name: 'Recrutement', link: '#recruitment' },
+  { name: 'Offre', link: '#recruit' },
 ];
 
 const Navbar = () => {
