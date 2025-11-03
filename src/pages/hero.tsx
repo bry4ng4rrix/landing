@@ -47,7 +47,7 @@ const Hero = () => {
             <span className='text-orange-300'>D</span>
             <span className='text-foreground'>S</span>{' '}
             <span className='text-orange-300'>G</span>
-            <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground/90'>ROUP</span>
+            <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground/90'>roup</span>
           </h1>
           
           <p className='max-w-2xl mx-auto text-sm md:text-base lg:text-lg text-muted-foreground font-signature px-4'>

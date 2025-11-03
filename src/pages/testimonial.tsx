@@ -69,7 +69,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Avatar className="h-12 w-12 border-2 border-orange-300">
-                <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                <AvatarImage className='p-2' src={testimonial.image} alt={testimonial.name} />
                 <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
               </Avatar>
               <div>
@@ -101,9 +101,9 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   );
 };
 
-const TestimonialSection = () => {
+const Testimonialsection = () => {
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-yellow-50/30 to-background">
+    <main className="py-20 md:py-28 bg-gradient-to-b from-yellow-50/30 to-background">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -147,8 +147,8 @@ const TestimonialSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
-export default TestimonialSection;
+export default Testimonialsection;

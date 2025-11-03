@@ -24,10 +24,10 @@ function App() {
         <Activity/>
 
         </div>
-        <main className='h-screen bg-indigo-50 rounded-t-[6rem]'>
+        <main className='bg-indigo-50 rounded-t-[6rem] '>
           <Testimonial/>
         </main>
-        <main id='service' className='mt-5 h-screen bg-orange-50 rounded-t-[6rem]'>
+        <main id='service' className=' bg-orange-50 rounded-t-[6rem]'>
           <Service/>
         </main>
         

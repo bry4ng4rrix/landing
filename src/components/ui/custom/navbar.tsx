@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center space-x-2">
             <span className="text-2xl font-signature text-orange-300">DS</span>
-            <span className="text-foreground text-xl font-medium hidden sm:inline">Group</span>
+            <span className="text-foreground text-xl font-delius font-medium hidden sm:inline">Group</span>
           </a>
 
           {/* Navigation Desktop */}
