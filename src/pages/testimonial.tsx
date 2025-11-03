@@ -21,6 +21,24 @@ const testimonial = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate ex architecto quae quas dolor nisi magni est ratione id.
             </CardContent>
         </Card>
+        <Card>
+            <CardHeader className='flex text-4xl font-semibold'>
+                    250 +
+                    <br /> <span className='text-xl'>Client</span>
+            </CardHeader>
+            <CardContent className='font-delius'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate ex architecto quae quas dolor nisi magni est ratione id.
+            </CardContent>
+        </Card>
+        <Card>
+            <CardHeader className='flex text-4xl font-semibold'>
+                    250 +
+                    <br /> <span className='text-xl'>Client</span>
+            </CardHeader>
+            <CardContent className='font-delius'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate ex architecto quae quas dolor nisi magni est ratione id.
+            </CardContent>
+        </Card>
 
       </div>
     </div>
