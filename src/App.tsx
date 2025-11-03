@@ -5,6 +5,7 @@ import Hero from './pages/hero'
 import Service from './pages/service'
 import Activity from './pages/activity'
 import Testimonial from './pages/testimonial';
+import Footer from './pages/footer'
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <main id='service' className=' bg-orange-50 rounded-t-[6rem]'>
           <Service/>
         </main>
+        <Footer/>
         
     </div>
   )
