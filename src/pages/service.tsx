@@ -76,7 +76,7 @@ const Service = () => {
             <Sparkles className="w-3 h-3 mr-1" />
             Nos Services
           </Badge>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance">
+          <h2 className="text-4xl sm:text-5xl font-signature lg:text-6xl font-bold text-balance">
             Des solutions adaptées à{" "}
             <span className="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
               vos besoins
